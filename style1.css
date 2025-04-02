@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+ 
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+   background-image: url(img/main.jpg);
+   background-repeat: no-repeat;
+   background-size:100%;
+}
+
+button{ 
+    background: #00E5FF;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        /* transition: background 0.3s ease; */
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(78, 63, 63);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+}
+.container{
+width: 1100px;
+margin:0px auto;
+}
+#nav .container{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    height: 100%;
+}
+#nav ul{
+    display: flex;
+    list-style: none;
+}
+#nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+}
+#about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    row-gap: 30px;
+}
+#about img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50pc;
+}
+#skill .skill-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+}
+#skill ,h2{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#skill .skill-container .skills{
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(233, 120, 7, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+} 
+#skill .skill-container .skills:hover {
+    transform: translateY(-10px);
+}
+#project .projects-container{
+    /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+}
+#project .projects-container .projects{
+    border-radius: 10px;
+        box-shadow: 50px 4px 8px rgba(10, 0, 0, 0.1);
+        width: 250px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+}
+
+#project .projects-container .projects:hover {
+    transform: translateY(-10px);}
+
+#project img{
+    height: 150px;
+    width: 100%
+}
+
+#contact .contact-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px 0 10px;;
+    align-items: center;
+    color: rgb(16, 8, 134);
+    
+}
+
+input[type="text2"]{
+    border: solid;
+    height: 80px;
+    width: 250px;
+
+}
+footer{
+   justify-items: center;
+   padding: 20px 0 20px;
+
+} 
+
